@@ -1,0 +1,26 @@
+<div>
+    <h1>Product List Component</h1>
+    <h2>{{_prodService.greetUser()}}</h2>
+    <h3>{{_prodService.appName}}</h3>
+    <h4>Product List</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>In Stock</th>
+            </tr>
+        </thead>
+        <tr *ngFor = "let c of _prodService.productList">
+            <td>{{c.pId}}</td> 
+            <td>{{c.pName}}</td> 
+            <td>{{c.pCategory}}</td> 
+            <td>{{c.pPrice}}</td> 
+            <td>{{c.pIsInStock}}</td>
+            <button>Add to cart</button>
+        </tr>
+    </table>
+</div>
+

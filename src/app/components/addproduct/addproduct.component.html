@@ -1,0 +1,19 @@
+<div>
+    <h1>Add Product Component</h1>
+    <h2>{{_productService.greetUser()}}</h2>
+    <h3>{{_productService.appName}}</h3>
+
+    <button (click) = "_productService.addProduct({pId:107,pName: 'Apple Watch', pCategory: 'Tech',pPrice: 900, pIsInStock: true})">Add hard coded product</button>
+    <h3>Add your own product!</h3>
+    <button (click) = "_productService.addAProduct({pId: id.value,pName:name.value,pCategory:category.value,pPrice:price.value,pIsInStock:inStock.checked})">Add a product!</button>
+    <form>
+        <label>Id</label><input #id type= "number">
+        <label>Name</label><input #name type="text">
+        <label>Category </label><input #category type="text">
+        <label>Price</label><input #price type="text">
+        <label>In Stock?</label> <input #inStock type="checkbox">
+    </form>
+    
+    
+
+</div>
